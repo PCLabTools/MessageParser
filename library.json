@@ -1,0 +1,24 @@
+{
+  "name": "MessageParser",
+  "version": "1.0.0",
+  "description": "Message parser for reading/writing and splitting Message state and data information from a STREAM message",
+  "keywords": "serial, uart, ethernet, stream",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/PCLabTools/MessageParser"
+  },
+  "authors":
+  [
+    {
+      "name": "Larry Colvin",
+      "email": "pclabtools@projectcolvin.com",
+      "url": "https://www.projectcolvin.com/about",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/PCLabTools/MessageParser",
+  "frameworks": "*",
+  "platforms": "*"
+}

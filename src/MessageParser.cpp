@@ -24,6 +24,7 @@ Message MessageParser::parse(String RAW_STRING) {
     String FULL_MESSAGE = _BUFFER.substring(0, _BUFFER.indexOf(_END_OF_MESSAGE));
     _BUFFER.remove(0, (_BUFFER.indexOf(_END_OF_MESSAGE) + _END_OF_MESSAGE.length()));
     returnMessage.state = FULL_MESSAGE.substring(0, FULL_MESSAGE.indexOf(_DELIMITER));
+    returnMessage.state = returnMessage.state.substring(0, returnMessage.state.lastIndexOf('\r'));
     returnMessage.state.toLowerCase();
     String DATA = FULL_MESSAGE.substring(FULL_MESSAGE.indexOf(_DELIMITER) + _DELIMITER.length());
     if (DATA.indexOf(_DATA_DELIMITER) != -1) {
